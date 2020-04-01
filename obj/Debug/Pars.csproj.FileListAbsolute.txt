@@ -1,0 +1,8 @@
+C:\Users\1111\source\repos\Pars\bin\Debug\Pars.exe.config
+C:\Users\1111\source\repos\Pars\bin\Debug\Pars.exe
+C:\Users\1111\source\repos\Pars\bin\Debug\Pars.pdb
+C:\Users\1111\source\repos\Pars\obj\Debug\Pars.Form1.resources
+C:\Users\1111\source\repos\Pars\obj\Debug\Pars.Properties.Resources.resources
+C:\Users\1111\source\repos\Pars\obj\Debug\Pars.csproj.GenerateResource.cache
+C:\Users\1111\source\repos\Pars\obj\Debug\Pars.exe
+C:\Users\1111\source\repos\Pars\obj\Debug\Pars.pdb
