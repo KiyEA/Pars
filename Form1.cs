@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Pars
 {
-    public partial class Form1 : Form
+  public partial class Form1 : Form
+  {
+    public Form1()
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private String HGK()
-        {
-            System.Net.WebClient wc = new System.Net.WebClient();
-            string response = wc.DownloadString("http://www.cbr.ru/scripts/XML_daily.asp");
-            string Rate = System.Text.RegularExpressions.Regex.Match(response, @"Гонконгский доллар</Name><Value>([0-9]+.[0-9]+)</Value>").Groups[1].Value;
-            return Rate;
-        }
-
-        private void Form1_Shown(object sender, EventArgs e)
-        {
-            textBox1.Text = "1 RUB = " + HGK() + " HGK";
-        }
+      InitializeComponent();
     }
+
+    private String HGK()
+    {
+      System.Net.WebClient wc = new System.Net.WebClient();
+      string response = wc.DownloadString("http://www.cbr.ru/scripts/XML_daily.asp");
+      string Rate = System.Text.RegularExpressions.Regex.Match(response, @"Гонконгский доллар</Name><Value>([0-9]+.[0-9]+)</Value>").Groups[1].Value;
+      return Rate;
+    }
+
+    private void Form1_Shown(object sender, EventArgs e)
+    {
+      textBox1.Text = "1 HGK =" + HGK() + "RUB";
+    }
+  }
 }
